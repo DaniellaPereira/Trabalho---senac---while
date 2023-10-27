@@ -1,0 +1,20 @@
+# Uma loja deseja cadastrar 5 clientes e verificar se o faturamento da loja foi superior a loja B (faturamento = 54000).
+# Se o faturamento atingir esse valor mostre na tela uma mensagem contendo em quanto foi superado o faturamento.
+
+i = 1  
+
+acumulador = 0 
+
+while i < 5 :
+    
+    valor = float(input("Digite o valor de compra do cliente " + str(i)))
+    acumulador = acumulador + valor
+    i += 1 
+    
+if acumulador > 5400:
+    
+    print( "Superou em: ", acumulador - 5400 )
+
+else:
+    
+    print("Não superou!")
