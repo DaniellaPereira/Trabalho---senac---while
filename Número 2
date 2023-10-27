@@ -1,0 +1,19 @@
+# Uma companhia de teatro deseja dar uma série de espetáculos. Fatos:
+
+# A direção calcula que praticando o preço de R$5,00 serão vendidos 120 ingressos
+# As despesas são fixas em R$ 200,00.
+# Ao diminuir R$ 0,50 o preço dos ingressos espera-se que as vendas aumentem em 26 ingressos.
+
+
+preco_ingresso = 5.00
+ingresso_total = 120 
+despesas = 200 
+
+while (preco_ingresso > 1.00) :
+    preco_ingresso = preco_ingresso - 0.50
+    ingresso_total = ingresso_total + 26
+    lucro = (preco_ingresso * ingresso_total) - despesas
+    
+    print(f"Preco do ingresso : R$ {preco_ingresso}")
+    print(f"Quantidade de ingressos : {ingresso_total}")
+    print(f"O lucro é de: R$ {lucro}\n")
