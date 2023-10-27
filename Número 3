@@ -1,0 +1,24 @@
+# Faça um programa que receba a idade de dez pessoas e que calcule e mostre 
+# a quantidade de pessoas com idade maior ou igual a 18 anos.
+
+num = 0 
+maior_18 = 0
+menor_18 = 0
+igual_18 = 0
+
+while num < 10 :
+    nome = input("Digite o nome da pessoa: ")
+    idade = input("Digite a idade do(a) " + nome)
+    
+    if int(idade) > 18 :
+        maiorDE18 = maior_18 + 1 
+        
+    elif int(idade) < 18 :
+        menorDE18 = menor_18 + 1 
+        
+    else:
+        igualA18 = igual_18 + 1 
+        
+print("Maiores que 18: ", maior_18)
+print("Menores que 18: ", menor_18)
+print("Igual a 18: ", igual_18)
